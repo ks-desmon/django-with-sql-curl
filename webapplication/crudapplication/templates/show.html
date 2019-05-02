@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Index</title>
+	
+</head>
+<body>
+
+{% for employee1 in employee %}
+	<h3>{{ employee1.eid }}</h3>
+	<h3>{{ employee1.ename }}</h3>
+	<a href="/edit/{{employee1.id}}">edit</a>
+	<a href="/delete/{{employee1.id}}">delete</a>
+{% endfor %}
+
+</body>
+</html>
